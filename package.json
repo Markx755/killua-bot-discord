@@ -1,0 +1,21 @@
+{
+  "name": "killua-bot",
+  "version": "1.3.0",
+  "description": "Killua Bot - Discord bot (Voice 24/7, Anti-Spam, Verify, HoneyPot, Onboarding)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node scripts/check.js && node --expose-internals scripts/check-imports.js",
+    "test": "node test/routing.test.js && node test/honeypot.test.js && node test/onboarding.test.js && node test/features.test.js && node test/safety.test.js",
+    "ci": "npm run check && npm test"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "discord.js": "^14.19.0",
+    "dotenv": "^16.4.5",
+    "libsodium-wrappers": "^0.7.13"
+  },
+  "engines": {
+    "node": ">=24.17.0"
+  }
+}

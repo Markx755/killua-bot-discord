@@ -1,0 +1,11 @@
+# ห้ามขึ้น GitHub เด็ดขาด: โทเคนบอท + ข้อมูลเซิร์ฟเวอร์
+.env
+.env.*
+!.env.example
+data.json
+
+node_modules/
+*.log
+*.bak
+*.zip
+.DS_Store
